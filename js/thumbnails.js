@@ -16,7 +16,7 @@ const createThumbnail = ({url, description, likes, comments}) => {
   fragment.append(thumbnail);
 };
 
-const createThumbnails = (photo) =>{
+const createThumbnails = (photo) => {
   photo.forEach(createThumbnail);
   container.append(fragment);
 };
